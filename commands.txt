@@ -1,0 +1,2 @@
+mix phoenix.gen.html Page pages title:string content:text
+
