@@ -10,6 +10,8 @@
   <li>
     <h3>Content:</h3>
     <%= @page.content %>
+    <%= content %>
+    <h3>@page</h3>
   </li>
 
 </ul>

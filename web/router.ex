@@ -16,7 +16,8 @@ defmodule Wiki.Router do
   scope "/", Wiki do
     pipe_through :browser # Use the default browser stack
 
-    resources "/", PageController
+    get       "/",      PageController, :index
+    resources "/pages", PageController
   end
 
   # Other scopes may use custom stacks.
