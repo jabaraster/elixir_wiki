@@ -8,6 +8,6 @@ defmodule Wiki.Repo.Migrations.CreatePage do
 
       timestamps
     end
-
+    create index(:pages, [:title], unique: true)
   end
 end
