@@ -9,7 +9,11 @@
 
   <li>
     <h3>Content:</h3>
-    <p><%= process_content @conn, @page %></p>
+    <p>
+      <%= for token <- process_content @page do %>
+        <%= token %>
+      <%= end %>
+    </p>
   </li>
 
 </ul>
